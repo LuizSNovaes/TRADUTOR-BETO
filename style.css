@@ -1,0 +1,63 @@
+:root {
+    /* ===== FUNDO ===== */
+    --bg-primary: #0D1913;
+    --bg-secondary: #0F1D16;
+    --bg-card: #1B2922;
+    --bg-card-dark: #19251F;
+    --bg-input: #101E17;
+
+    /* ===== BORDAS ===== */
+    --border-primary: #1B2D22;
+    --border-secondary: #36433B;
+    --border-gold: #6C642F;
+
+    /* ===== VERDES ===== */
+    --green-primary: #A1C095;
+    --green-neon: #A8E63D;
+    --green-light: #D5E5D0;
+    --green-dark: #40734D;
+    --green-button: #009B70;
+
+    /* ===== LARANJA ===== */
+    --orange-primary: #FF941F;
+    --orange-light: #FFA12B;
+
+    /* ===== VERMELHO ===== */
+    --red-primary: #FF3030;
+    --red-dark: #C92525;
+
+    /* ===== TEXTOS ===== */
+    --text-primary: #EDF5EE;
+    --text-secondary: #AEBBB2;
+    --text-muted: #77857C;
+    --text-green: #A1C095;
+
+    /* ===== ELEMENTOS ===== */
+    --track: #29352F;
+    --silence: #303A35;
+    --shadow: rgba(0, 0, 0, 0.35);
+
+    /* ===== GRADIENTES ===== */
+    --gradient-green: linear-gradient(
+        180deg,
+        #A8E63D 0%,
+        #009B70 100%
+    );
+
+    --gradient-card: linear-gradient(
+        135deg,
+        #1B2922 0%,
+        #19251F 100%
+    );
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}

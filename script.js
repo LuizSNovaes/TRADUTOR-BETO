@@ -112,27 +112,27 @@ function morseParaTexto(morse) {
   for (const codigo of codigos) {
     const letra = TEXTO[codigo];
     if (letra) {
-    resultado += letra;
+      resultado += letra;
     }
-}
+  }
 
-    return resultado;
+  return resultado;
 }
 
 textInput.addEventListener("input", () => {
-    morseOutput.value = textoParaMorse(textInput.value);
+  morseOutput.value = textoParaMorse(textInput.value);
 });
 
 btnSwap.addEventListener("click", () => {
-    textInput.value = morseParaTexto(morseOutput.value);
+  textInput.value = morseParaTexto(morseOutput.value);
 });
 
 function atualizarSlider(slider) {
   const pct = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
-    slider.style.setProperty("--valor", pct + "%");
+  slider.style.setProperty("--valor", pct + "%");
 }
 
 document.querySelectorAll('input[type="range"]').forEach((slider) => {
-    atualizarSlider(slider);
-    slider.addEventListener("input", () => atualizarSlider(slider));
+  atualizarSlider(slider);
+  slider.addEventListener("input", () => atualizarSlider(slider));
 });

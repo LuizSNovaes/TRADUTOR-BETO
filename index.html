@@ -1,22 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradutor-Código-Morse</title>
+    <title>Tradutor-Morse-Beto</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="text">
-            <label for="text">Text</label>
-            <input type="text">
-        </div>
-        <div class="morse"></div>
-    </div>
+    <main class="traduction">
+
+        <section class="converter">
+            <div class="panel text-panel">
+                <div class="panel-header">
+                    <span>Text</span>
+                    <div class="presets">
+                        <button type="button">SOS</button>
+                        <button type="button">HELLO WORLD</button>
+                        <button type="button">PARIS</button>
+                    </div>
+                </div>
+                <textarea id="text-input"></textarea>
+            </div>
+
+            <button class="swap-button" id="swapButton" type="button">
+
+                <span class="material-icons">
+                    compare_arrows
+                </span>
+
+            </button>
+
+            <div class="panel morse-panel">
+                <div class="panel-header">
+                    <span>Morse Code</span>
+                </div>
+                <textarea id="morse-output"></textarea>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
